@@ -12,4 +12,14 @@ view: dummy {
   measure: count {
     type: count
   }
+
+  dimension: counpon_category {
+    type: string
+    label: "クーポン分類"
+    case: {
+      when: { sql:${TABLE}.b = 'Alpha';; label: "a_マーケ自動"}
+      when: { sql:${TABLE}.b = 'Delta';; label: "b_マーケ"}
+      else: "その他クーポン"
+    }
+  }
 }
