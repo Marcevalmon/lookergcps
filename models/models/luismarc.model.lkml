@@ -36,6 +36,8 @@ explore: dept {}
 
 explore: dummy {}
 
+explore: dummy_2 {}
+
 explore: employees {}
 
 explore: events {
